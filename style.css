@@ -1,0 +1,176 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	font-size: 14px; /*not part of Meyer's reset*/
+	font-family: 'Roboto', 'Arial', sans-serif;  /*not part of Meyer's reset*/
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*********************added css reset***************************/
+a, a:hover, a:visited, a:active, a:focus {
+	text-decoration: none;
+	color: inherit;
+}
+
+/*********************end of css reset************************/
+
+
+/*****************************************
+*******************Navbar*****************
+*****************************************/
+
+header {
+	width: 100%;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	color: #848484;
+	border-bottom: 0.5px solid #f7f7f7;
+}
+
+i span {
+	display: none;
+}
+
+header i:hover,
+header img:hover {
+	cursor: pointer;
+	color: #000;
+	opacity: 1;
+}
+
+/*****left******/
+.left-nav {
+	width: 25%;
+	margin: 0 25px;
+}
+
+/*****center******/
+.search-bar {
+	width: 50%;
+	display: flex;
+}
+
+.search-box{
+	width: 85%;
+	height: 30px;
+	padding: 2px 6px;
+	border-radius: 2px 0 0 2px;
+	border: 1px solid #d3d3d3;
+	background-color: #fff;
+}
+
+.search-bar input {
+	margin-right: 4px;
+	max-width: 100%;
+	width: 100%;
+	height: 100%;
+	border: none;
+	font-size: 1rem;
+}
+
+.search-btn {
+	border-top: 1px solid #d3d3d3;
+	border-right: 1px solid #d3d3d3;
+	border-bottom: 1px solid #d3d3d3;
+	width: 60px;
+	text-align: center;
+	background-color: #f8f8f8;
+	border-radius: 2px 0 0 2px;
+}
+
+.search-btn i {
+	width: auto;
+	padding: 8px 0;
+}
+
+/*****right******/
+
+.right-nav  {
+	width: 25%;
+	margin-right: 30px;
+	text-align: right;
+}
+
+.right-nav * {
+	margin-left: 10%;
+}
+
+.right-nav a {
+	margin-left: 15%;
+	color: #2793e6;
+	cursor: pointer;
+}
+
+.right-nav a:hover {
+	opacity: 0.6;
+}
+
+.right-nav img {
+	transform: translateY(3px);
+	opacity: 0.4;
+}
+
+/*****************************************
+*******************Main*****************
+*****************************************/
+
+section {
+	background-color: yellow;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+article {
+	background-color: aquamarine;
+	width: 60%;
+	height: auto;
+}
+
+aside {
+	background-color: green;
+	width: 40%;
+	height: auto;
+}
