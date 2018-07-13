@@ -77,20 +77,30 @@ i span {
 	border-bottom: 1px solid #eeeeef;
 }
 
-.vid-subtitles {
+.subtitles {
 	font-size: 0.8rem;
   line-height: 1rem;
   margin-bottom: 2px;
 	color: #848484;
 }
 
-.vid-options {
+.interact-options {
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
 	font-size: 0.8rem;
 	font-weight: bold;
 	letter-spacing: 0.3px;
+}
+
+.interact-options p {
+	padding-left: 10px;
+	padding-right: 20px;
+}
+
+.interact-options i:hover {
+	color: #333;
+	cursor: pointer;
 }
 
 /*****************************************
@@ -242,19 +252,9 @@ h1 {
 	color: #a4a4a4;
 }
 
-.vid-options p {
-	padding-left: 10px;
-	padding-right: 20px;
-}
-
-.vid-options i:last-of-type {
+.interact-options i:last-child {
 	padding-left: 20px;
 	padding-right: 20px;
-}
-
-.vid-options i:hover {
-	color: #333;
-	cursor: pointer;
 }
 
 /*video details*/
@@ -378,4 +378,81 @@ aside {
 }
 
 .show-sugg-vid a {
+}
+
+/*******************Comments*****************/
+
+.comments {
+	width: 90%;
+	height: auto;
+}
+
+.comments-top * {
+	display: inline-block;
+}
+
+.comments-top p:last-of-type {
+	padding-left: 25px;
+	padding-right: 10px;
+	font-size: 0.8rem;
+  font-weight: bold;
+  letter-spacing: 0.3px;
+}
+
+.comments-top i {
+	padding-right: 10px;
+}
+
+/*video details*/
+
+.vid-text {
+	margin-left: 64px;
+	padding-top: 20px;
+	padding-bottom: 15px;
+}
+
+.comm-details .profile-pic {
+	width: 40px;
+	height: 40px;
+}
+
+.comm-text {
+	padding-top: 5px;
+	line-height: 1.3rem;
+}
+
+.comm-interactions {
+	justify-content: flex-start;
+	margin-top: 10px;
+}
+
+.comment-date {
+	font-size: 0.8rem;
+	display: inline-block;
+	padding-left: 7px;
+}
+
+/***********Profile pics*********/
+
+.pic1 {
+	background-image: url('images/cat.jpg');
+}
+.pic2 {
+	background-image: url('images/puma.jpg');
+}
+.pic3 {
+	background-image: url('images/duck.jpg');
+}
+.pic4 {
+	background-image: url('images/goilla.jpg');
+}
+.pic5 {
+	background-image: url('images/delorean.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.pic1, .pic2, .pic3, .pic4 {
+	background-repeat: no-repeat;
+	background-size: cover;
 }
