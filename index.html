@@ -9,7 +9,7 @@
   </head>
 
   <body>
-    <header>
+    <header class="grey-bott-border">
       <div class="left-nav">
         <i class="fas fa-bars fa-lg"><span>Menu</span></i>
       </div>
@@ -29,15 +29,47 @@
       </div>
     </header>
     <section>
-      <article>
-        main
+      <article class="curr-video">
+        <div class="video-wrapper">   <!--trick from css-tricks-->
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/V74l_zS1x8E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+        <div class="video-desc">
+          <h1>Contributing to Open Source Part I: The Easy Way</h1>
+          <div class="vid-data grey-bott-border">
+            <p class="nb-views grey-text">41,988 views</p>
+            <div class="vid-options grey-text">
+              <i class="fas fa-thumbs-up"><span>Thumbs up</span></i>
+              <p>296</p>
+              <i class="fas fa-thumbs-down"><span>Thumbs down</span></i>
+              <p>9</p>
+              <i class="fas fa-share"><span>Share</span></i>
+              <p>SHARE</p>
+              <i class="far fa-plus-square"><span>Add</span></i>
+              <i class="fas fa-ellipsis-h"><span>Other options</span></i>
+            </div>
+          </div>
+          <div class="vid-details grey-bott-border">
+            <div class="profile-pic">T</div>
+            <div class="subscribe-btn">SUBSCRIBE <span> 619</span></div>
+            <div class="vid-text">
+              <a class="owner-name bold-text" href="https://www.theodinproject.com/" target="_blank">The Odin Project</a>
+              <p class="published grey-text">Published on Feb 27, 2014</p>
+              <p class="summary">How do you contribute to open source? In this video, I'll describe the easiest way to make a simple contribution to an open source project -- without using the command line, a text editor, "forking a repo", or even touching Git outside of Github.  I'll also describe what kinds of</p>
+              <a href"#" class="show-more bold-text">SHOW MORE</a>
+            </div>
+          </div>
+        </div>
       </article>
+      <aside>
+        <div class="up-next">
+        </div>
+        <div class="suggestions">
+          <p>Up next</p>
+        </div>
+      </aside>
       <article class="comments">
         Comments
       </article>
-      <aside>
-        aside
-      </aside>
     </section>
   </body>
 </html>

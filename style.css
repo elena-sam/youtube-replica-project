@@ -31,6 +31,7 @@ body {
 	line-height: 1;
 	font-size: 14px; /*not part of Meyer's reset*/
 	font-family: 'Roboto', 'Arial', sans-serif;  /*not part of Meyer's reset*/
+	color: #212121;  /*not part of Meyer's reset*/
 }
 ol, ul {
 	list-style: none;
@@ -56,6 +57,21 @@ a, a:hover, a:visited, a:active, a:focus {
 
 /*********************end of css reset************************/
 
+i span {
+	display: none;
+}
+
+.grey-text {
+	color: #848484;
+}
+
+.bold-text {
+	font-weight: bold;
+}
+
+.grey-bott-border {
+	border-bottom: 1px solid #f7f7f7;
+}
 
 /*****************************************
 *******************Navbar*****************
@@ -65,13 +81,9 @@ header {
 	width: 100%;
 	height: 60px;
 	display: flex;
+	flex-wrap: nowrap;
 	align-items: center;
 	color: #848484;
-	border-bottom: 0.5px solid #f7f7f7;
-}
-
-i span {
-	display: none;
 }
 
 header i:hover,
@@ -83,13 +95,13 @@ header img:hover {
 
 /*****left******/
 .left-nav {
-	width: 25%;
-	margin: 0 25px;
+	width: 20%;
+	margin-left: 25px;
 }
 
 /*****center******/
 .search-bar {
-	width: 50%;
+	width: 40%;
 	display: flex;
 }
 
@@ -129,8 +141,8 @@ header img:hover {
 /*****right******/
 
 .right-nav  {
-	width: 25%;
-	margin-right: 30px;
+	width: 40%;
+	margin-right: 40px;
 	text-align: right;
 }
 
@@ -158,17 +170,138 @@ header img:hover {
 *****************************************/
 
 section {
-	background-color: yellow;
 	display: flex;
-	flex-wrap: wrap;
-}
-
-article {
-	background-color: aquamarine;
-	width: 60%;
+	flex-flow: column wrap;
+	align-items: center;
 	height: auto;
+	margin-top: 30px;
 }
 
+/*******************Video*****************/
+
+.curr-video {
+	width: 98%;
+	line-height: 2.4rem;
+}
+
+.video-wrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 30px;
+	height: 0;
+	margin: 0 auto;
+}
+
+.video-wrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/*video data*/
+h1 {
+	font-size: 1.2rem;
+	padding-top: 10px;
+}
+
+.vid-data {
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 15px;
+}
+
+.nb-views {
+	font-size: 1rem;
+	width: 50%;
+}
+
+.vid-options {
+	width: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	color: #a4a4a4;
+	font-size: 0.8rem;
+}
+
+.vid-options p {
+	padding-left: 10px;
+	padding-right: 20px;
+}
+
+.vid-options i:last-of-type {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.vid-options i:hover {
+	color: #333;
+	cursor: pointer;
+}
+
+/*video details*/
+.vid-details {
+	line-height: 1.5rem;
+}
+
+.vid-text {
+	margin-left: 64px;
+	padding-top: 20px;
+	padding-bottom: 15px;
+}
+
+.profile-pic {
+	margin-top: 20px;
+	margin-right: 16px;
+	background-color: #689f39;
+	float: left;
+	width: 48px;
+	height: 48px;
+	border border-radius:;
+	border-radius:  50%;
+	color: #fff;
+	display:  flex;
+	justify-content:  center;
+	align-items:  center;
+	font-size: 1.4rem;
+}
+
+.subscribe-btn {
+	margin-top: 20px;
+	float: right;
+	text-align: center;
+  width: 130px;
+  color: #fff;
+  background-color: #FF0000;
+  padding: 5px 0;
+  border-radius: 2px;
+	cursor: pointer;
+}
+
+.subscribe-btn span {
+	padding-left: 4px;
+  opacity: 0.8;
+	font-weight: bold;
+}
+
+.published {
+	font-size: 0.8rem;
+  line-height: 1rem;
+  margin-bottom: 20px;
+}
+
+.show-more {
+	color: #848484;
+	font-size: 0.8rem;
+  margin-top: 10px;
+	cursor: pointer;
+	line-height: 2.4rem;
+}
+
+
+/*******************Aside*****************/
 aside {
 	background-color: green;
 	width: 40%;
