@@ -57,6 +57,10 @@ a, a:hover, a:visited, a:active, a:focus {
 
 /*********************end of css reset************************/
 
+/*****************************************
+*******************GENERAL*****************
+*****************************************/
+
 i span {
 	display: none;
 }
@@ -70,7 +74,23 @@ i span {
 }
 
 .grey-bott-border {
-	border-bottom: 1px solid #f7f7f7;
+	border-bottom: 1px solid #eeeeef;
+}
+
+.vid-subtitles {
+	font-size: 0.8rem;
+  line-height: 1rem;
+  margin-bottom: 2px;
+	color: #848484;
+}
+
+.vid-options {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	font-size: 0.8rem;
+	font-weight: bold;
+	letter-spacing: 0.3px;
 }
 
 /*****************************************
@@ -180,7 +200,7 @@ section {
 /*******************Video*****************/
 
 .curr-video {
-	width: 98%;
+	width: 90%;
 	line-height: 2.4rem;
 }
 
@@ -217,13 +237,9 @@ h1 {
 	width: 50%;
 }
 
-.vid-options {
+.options-menu {
 	width: 50%;
-	display: flex;
-	align-items: center;
-	justify-content: flex-end;
 	color: #a4a4a4;
-	font-size: 0.8rem;
 }
 
 .vid-options p {
@@ -286,10 +302,9 @@ h1 {
 	font-weight: bold;
 }
 
-.published {
-	font-size: 0.8rem;
-  line-height: 1rem;
-  margin-bottom: 20px;
+.vid-info {
+	padding-top: 20px;
+	line-height: 1.3rem;
 }
 
 .show-more {
@@ -303,7 +318,64 @@ h1 {
 
 /*******************Aside*****************/
 aside {
-	background-color: green;
-	width: 40%;
+	width: 90%;
 	height: auto;
+}
+
+.categ-title {
+	font-size: 1rem;
+	padding: 25px 0 20px 0;
+}
+
+.autoplay-btn {
+	float: right;
+  padding: 25px 0 20px 0;
+}
+
+.autoplay-btn i {
+	color: #e6e6e6;
+	padding-left: 10px;
+}
+
+.vid-duration {
+	float: right;
+  color: #fff;
+  background: #000;
+  opacity: 0.7;
+  padding: 2px 5px;
+  border-radius: 2px;
+  font-size: 0.8rem;
+  transform: translatey(-20px);
+  margin-right: 5px;
+}
+
+.sugg-vid-wrapper {
+	display: flex;
+}
+
+.sugg-vid {
+	width: 168px;
+}
+
+.sugg-vid-desc {
+	margin-left: 10px;
+}
+
+.sugg-vid-title {
+	margin-bottom: 7px;
+}
+
+/*suggestion*/
+.suggestions {
+	padding-top: 15px;
+}
+
+.show-sugg-vid {
+	text-align: center;
+	border: 1px solid #eeeeef;
+	background-color: #eeeeef;
+	border-radius: 2px;
+}
+
+.show-sugg-vid a {
 }
