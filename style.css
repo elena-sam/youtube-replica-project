@@ -397,9 +397,6 @@ aside {
 	border-radius: 2px;
 }
 
-.show-sugg-vid a {
-}
-
 /*******************Comments*****************/
 
 .comments {
@@ -513,7 +510,7 @@ aside {
 
 	.curr-video,
 	.comments {
-		width: 60%;
-		padding-left: 25px;
+		width: 50%;
+		padding-left: 95px;
 	}
 }
